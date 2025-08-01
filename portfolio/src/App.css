@@ -1,42 +1,96 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* App.css */
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  body {
+    font-family: sans-serif;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .navbar {
+    background-color: #1e293b; /* slate-800 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
-}
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #60a5fa; /* text-blue-400 */
+    text-decoration: none;
+  }
+  
+  .logo-icon {
+    font-size: 40px;
+  }
+  
+  .logo-text {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-link {
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #334155;
+    color: #38bdf8;
+  }
 
-.card {
-  padding: 2em;
-}
+  
+/* Home.css */
 
-.read-the-docs {
-  color: #888;
-}
+.home-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f8fafc; /* soft background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* to avoid nav bar overlap */
+    box-sizing: border-box;
+  }
+  
+  .home-inner {
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home-inner h1 {
+    font-size: 3rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+  }
+  
+  .home-inner p {
+    font-size: 1.2rem;
+    color: #334155;
+  }
+  
