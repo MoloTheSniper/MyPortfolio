@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar">
       <Link to="/" className="logo">
         <BiLogoReact className="logo-icon" />
-        <span className="logo-text">React Router</span>
+        <span className="logo-text">Moloko Magwai</span>
       </Link>
 
       <div className="nav-links">

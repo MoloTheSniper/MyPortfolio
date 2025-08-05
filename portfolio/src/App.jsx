@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './assets/routes/Home';
 import { About } from './assets/routes/About';
 import Contact from './assets/routes/Contact';
+import React,{useEffect} from 'react';
 
 function App() 
 {
@@ -17,6 +18,7 @@ function App()
         <Route path='/contact' element= {<Contact/>}/>
       </Routes>
      </div>
+
     </>
   )
 }
