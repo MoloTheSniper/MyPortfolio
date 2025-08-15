@@ -1,6 +1,9 @@
 import React, { useRef } from 'react'
 import '../../App.css'
-import myselfImg from '../../assets/images/myself.png';
+import me2 from '../../assets/images/Me2.png';
+import { About } from './About';
+import Services from './Services';
+import Contact from './Contact';
 
 const Home = () => {
   const gamesRef = useRef(null)
@@ -20,24 +23,37 @@ const Home = () => {
   ]
 
   return (
-    <div style={{'padding-top': '70px'}}>
-        <div>
-          <button
-            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-            onClick={() => {
-              gamesRef.current?.scrollIntoView({ behavior: 'smooth' })
-            }}
-          >
-            Jump to Games
-          </button>
-        </div>
+    <>
 
-        <div ref={gamesRef} id="games">
-        <img
-            src={myselfImg}
-            alt="Myself"
-            className="w-32 h-20 object-cover rounded-md flex-shrink-0"
-            />
+    {/*---Start of Left and right Div--- */}
+    <div className="container">
+      <div className="box">
+        <h1 className ="super-heading" style={{"padding-top":"120px"}}>Hi,
+        I am Moloko, Web developer.</h1>
+      </div>
+        <div className="box">
+            <br/> <br/> <br/>
+            <div className='circle'>
+                <img
+                src={me2}
+                alt="Myself"
+                className="profile-image"
+                />
+            </div>
+        </div>
+    </div>
+    {/*---End of Left and right Div--- */}
+    <div>
+        <About/>
+    </div>
+    <div>
+        <Services/>
+    </div>
+    <div>
+        <Contact/>
+    </div>
+     <div ref={gamesRef} id="games">
+
 
           <h2 className="text-2xl font-bold mb-6">Games</h2>
           <div className="flex flex-col gap-6 overflow-y-auto max-h-[600px]">
@@ -59,7 +75,20 @@ const Home = () => {
             ))}
           </div>
         </div>
+        <div style={{'padding-top': '70px','padding-bottom': '70px'}}>
+        <div>
+            <br/>
+          <button
+            className="switcher"
+            onClick={() => {
+              gamesRef.current?.scrollIntoView({ behavior: 'smooth' })
+            }}
+          >
+            Jump to Games
+          </button>
+        </div>
     </div>
+    </>
   )
 }
 
