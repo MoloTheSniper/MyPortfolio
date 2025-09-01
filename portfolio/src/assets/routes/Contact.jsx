@@ -1,14 +1,15 @@
-import React from 'react'
-import '../../App.css'
+import React from 'react';
+import '../../App.css';
 import { IoIosCall } from "react-icons/io";
-import Swal from 'sweetalert2'
-const Contact = () => {
+import Swal from 'sweetalert2';
+import call from '../../assets/GIFS/CALL1.gif';
+import paper1 from '../../assets/images/paper2.png';
 
-  //code from web3forms.com
+const Contact = () => {
+  // Form submission
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-
     formData.append("access_key", "f6134abf-3e77-4b61-8988-96bc01305d8c");
 
     const object = Object.fromEntries(formData);
@@ -25,8 +26,6 @@ const Contact = () => {
 
     if (res.success) {
       console.log("Success", res);
-
-      //SweetAlert2Show success message
       Swal.fire({
         title: "Success!",
         text: "Your email has been sent!",
@@ -37,29 +36,59 @@ const Contact = () => {
 
   return (
     <div className="container">
-      <section className="contact">
-        <form onSubmit={onSubmit}>
-          <h2>Contact Form</h2>
-          <div className='input-box'>
-            <label>Full Name</label>
-            <input type='text' className='field' placeholder='Enter your name' name='name' required/>
-          </div>
+      <img
+        src={call}
+        alt="Calling"
+        className="image"
+        style={{paddingbottom: "50px"}}
+      />
 
-          <div className='input-box'>
-            <label>Email Address</label>
-            <input type='email' className='field' placeholder='Enter your email' name ='email'required/>
-          </div>
+      <div
+        className='box paper-box'
+        style={{ backgroundImage: `url(${paper1})`, height: "550px" }}
+      >
+        <section className="contact">
+          <form onSubmit={onSubmit}>
+            <h2>Ready to Chat? Contact Me :)</h2>
 
-          <div className='input-box'>
-            <label>Your Message</label>
-            <textarea name ='message' className='field message' placeholder='Enter your message' required></textarea>
-          </div>
-          <button type ="submit">Send Message</button>
+            <div className='input-box'>
+              <label>Full Name</label>
+              <input
+                type='text'
+                className='field'
+                placeholder='Enter your name'
+                name='name'
+                required
+              />
+            </div>
 
-        </form>
-      </section>
+            <div className='input-box'>
+              <label>Email Address</label>
+              <input
+                type='email'
+                className='field'
+                placeholder='Enter your email'
+                name='email'
+                required
+              />
+            </div>
+
+            <div className='input-box'>
+              <label>Your Message</label>
+              <textarea
+                name='message'
+                className='field message'
+                placeholder='Enter your message'
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
