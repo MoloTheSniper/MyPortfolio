@@ -5,6 +5,7 @@ import paper1 from '../../assets/images/paper2.png';
 export const About = () => {
   return (
     <div>
+      <br/><br/><br/><br/><br/>
                 <h1 className='center-text'>About Page</h1>
       <div className="container">
         <div className='box'>

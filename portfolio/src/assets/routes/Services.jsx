@@ -34,7 +34,7 @@ const Services = () => {
             <h1>Mobile App Development</h1>
             <br/>
             <p>Tell me why, its the least you can do for me.</p>
-            <button className="switcher">Tell Me More</button>
+            <button className="switcher">Tell Me More</button> 
           </div>
         </div>
 
@@ -43,10 +43,10 @@ const Services = () => {
             <br/>
             <img src={diamond} alt="Myself" className="image2" />
             <br/><br/>
-            <h2>3D Modeling</h2>
+            <h1>3D Modeling & Rigging</h1>
             <br/>
             <p>Tell me why, its the least you can do for me. This is how things work, i like this job</p>
-            <button className="switcher">Tell Me More</button>
+             <button className="switcher">Tell Me More</button> 
           </div>
         </div>
 

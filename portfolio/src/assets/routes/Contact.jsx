@@ -49,7 +49,7 @@ const Contact = () => {
       >
         <section className="contact">
           <form onSubmit={onSubmit}>
-            <h2>Ready to Chat? Contact Me :)</h2>
+            <h1>Ready to Chat? Contact Me :)</h1>
 
             <div className='input-box'>
               <label>Full Name</label>
@@ -83,7 +83,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" className="switcher">Send Message</button>
           </form>
         </section>
       </div>
