@@ -388,3 +388,63 @@ form button:hover {
     font-size: 1.6rem;
   }
 }
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #065eb1;
+  cursor: pointer;
+  z-index: 1100; /* above menu */
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* hide by default */
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* just below navbar */
+    right: 20px;
+    background: rgba(19, 16, 49, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 15px;
+    gap: 12px;
+    width: 200px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Nav links in dropdown */
+  .nav-link {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+/* Smallest devices */
+@media (max-width: 480px) {
+  .nav-links {
+    width: 100%;
+    right: 0;
+    border-radius: 0;
+  }
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
