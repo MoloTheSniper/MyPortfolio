@@ -6,6 +6,7 @@ import { About } from './assets/routes/About';
 import Contact from './assets/routes/Contact';
 import React,{useEffect} from 'react';
 import Services from './assets/routes/Services';
+import Website from './assets/routes/Website';
 
 function App() 
 {
@@ -19,6 +20,7 @@ function App()
         <Route path ='/about' element ={<About/>}/>
         <Route path='/contact' element= {<Contact/>}/>
         <Route path='/services' element= {<Services/>}/>
+        <Route path='/website' element= {<Website/>}/>
       </Routes>
      </div>
 

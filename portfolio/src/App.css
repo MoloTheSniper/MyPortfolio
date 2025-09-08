@@ -1,127 +1,87 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: sans-serif;
-    background: linear-gradient(to top, #e2e1d2, #e3e1d3);
-  }
-  
-  .navbar {
-    padding: 12px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  backdrop-filter: blur(10px);          /* blur the background */
-  -webkit-backdrop-filter: blur(10px);  /* Safari support */
-  border-radius: 16px;                  /* rounded corners */
-  padding: 20px;   
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: #065eb1; /* text-blue-400 */
-    text-decoration: none;
-  }
-  
-  .logo-icon {
-    font-size: 40px;
-  }
-  
-  .logo-text {
-    font-weight: 600;
-    font-size: 22px;
-  }
-  
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  
-  .nav-link {
-    padding: 6px 12px;
-    font-size: 18px;
-    font-weight: 300;
-    color: #065eb1;
-    text-decoration: none;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    border: none;
-    padding: 10px;
-    border-radius: 99em;
-    font-size: var(--fz);
-    background-color: color-mix(in srgb, var(--c-glass) 12%, transparent);
-  
-  }
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to top, #131031, #01184d);
+}
 
-  
-/* Home.css */
+.navbar {
+  padding: 12px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+}
 
-.home-wrapper {
-    height: 100vh;
-    width: 100vw;
-    background-color: #f8fafc; /* soft background */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 80px; /* to avoid nav bar overlap */
-    box-sizing: border-box;
-  }
-  
-  .home-inner {
-    max-width: 700px;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .home-inner h1 {
-    font-size: 3rem;
-    color: #0f172a;
-    margin-bottom: 1rem;
-  }
-  
-  .home-inner p {
-    font-size: 1.2rem;
-    color: #334155;
-  }
-  /* Button */
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-  }
-  button:hover {
-    border-color: #646cff;
-  }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #065eb1;
+  text-decoration: none;
+}
 
-  /*------ Liquid Glass-------*/
+.logo-icon {
+  font-size: 40px;
+}
 
+.logo-text {
+  font-weight: 600;
+  font-size: 22px;
+}
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
 
+.nav-link {
+  padding: 6px 12px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #065eb1;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
 
+.nav-link:hover {
+  border: none;
+  padding: 10px;
+  border-radius: 99em;
+  font-size: var(--fz);
+  background-color: color-mix(in srgb, var(--c-glass) 12%, transparent);
+}
 
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
 
+button:hover {
+  border-color: #646cff;
+}
 
 .switcher {
   z-index: 1;
@@ -133,148 +93,86 @@
   padding: 12px 20px;
   margin: 0 auto;
   font-size: var(--fz);
+  color: rgb(0, 132, 255);
   cursor: pointer;
   border: none;
   border-radius: 16px;
-
-  /* Glassy background with bluish tint */
-  background: rgba(31, 78, 177, 0.25);   /* subtle blue tint */
-  backdrop-filter: blur(4px);            /* gentle blur */
+  background: rgba(31, 78, 177, 0.25);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-
-  /* Soft shadows for depth */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15),
               0 0 15px rgba(255, 255, 255, 0.2);
-
-  /* Smooth transition on hover */
   transition: all 0.3s ease;
 }
 
 .switcher:hover {
-  background: rgba(31, 78, 177, 0.35); /* slightly more visible blue on hover */
+  background: rgba(31, 78, 177, 0.35);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2),
               0 0 20px rgba(255, 255, 255, 0.25);
-  transform: translateY(-2px);          /* subtle lift effect */
+  transform: translateY(-2px);
 }
 
-
-
-
-@keyframes scaleToggle {
-  0% { scale: 1 1; }
-  50% { scale: 1.1 1; }
-  100% { scale: 1 1; }
-}
-
-@keyframes scaleToggle2{
-  0% { scale: 1 1; }
-  50% { scale: 1.2 1; }
-  100% { scale: 1 1; }
-} 
-
-@keyframes scaleToggle3 {
-  0% { scale: 1 1; }
-  50% { scale: 1.1 1; }
-  100% { scale: 1 1; }
-}
-
-
-/*--------------Left/ Right Container---------------*/
 .container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 70px;
-  }
-  
-  .box {
-    padding: 12px;        /* Optional: adds space inside the box */
-    border-radius: 6px;   /* Optional: for rounded corners */
-    left: 10;
-    box-sizing: border-box;
-  
-    /* Let content define size */
-    width: 50%;
-    height: auto;
-  
-    /* Allow the box to grow/shrink based on content */
-    flex: 0 1 auto;
-    
-  }
-  .paper-box {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  padding: 20px;
-
-  /* paper background via inline style */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 70px;
 }
 
-/* Optional: soft overlay for readability */
-.paper-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
- 
-  pointer-events: none;
-}
-
-.paper-box > .centered-content {
-  position: relative;
-  z-index: 1; /* above overlay */
+.box {
+  padding: 12px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 50%;
+  height: auto;
+  flex: 0 1 auto;
 }
 
 .profile-image {
-  width: 100%;          /* Base width */
+  width: 100%;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
   display: block;
-  transition: transform 1s ease;  /* Smooth scaling effect */
-}
-.image {
-  width: 45%;          /* Shrinks the image */
-  height: auto;        /* Keep aspect ratio */
-  border-radius: 8px;
-  object-fit: contain; /* Show whole image without cropping */
-  display: block;
-  transition: transform 1s ease;  /* Smooth scaling effect */
-}
-.image2 {
-  width: 45%;          /* Shrinks the image */
-  height: 120px;        /* Keep aspect ratio */
-  border-radius: 8px;
-  object-fit: contain; /* Show whole image without cropping */
-  display: block;
-  transition: transform 1s ease;  /* Smooth scaling effect */
-}
-.image3 {
-  width: 60%;          /* Shrinks the image */
-  height: auto;        /* Keep aspect ratio */
-  border-radius: 8px;
-  object-fit: contain; /* Show whole image without cropping */
-  display: block;
-  transition: transform 1s ease;  /* Smooth scaling effect */
-}
-.profile-image:hover {
-  transform: scale(1.15);  /* Grow by 15% */
+  transition: transform 1s ease;
 }
 
+.profile-image:hover {
+  transform: scale(1.15);
+}
+
+.image {
+  width: 45%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  display: block;
+  transition: transform 1s ease;
+}
+
+.image2 {
+  width: 45%;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: contain;
+  display: block;
+  transition: transform 1s ease;
+}
+
+.image3 {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  display: block;
+  transition: transform 1s ease;
+}
 
 .super-heading {
   font-size: 3rem;
   font-weight: 1000;
   letter-spacing: 1px;
-  
-  /* Base color */
-  color: #1f4eb1;
-
-  /* Add subtle shiny gradient overlay */
   background: linear-gradient(
     135deg,
     rgba(31, 78, 177, 0.8) 0%,
@@ -285,28 +183,22 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
-  /* Minimal blur for glassy effect */
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
-
-  /* Soft glowing edges */
   text-shadow:
     0 2px 4px rgba(0, 0, 0, 0.2),
     0 0 10px rgba(255, 255, 255, 0.3);
 }
+
 h1 {
   font-size: 3rem;
   font-weight: 1000;
   letter-spacing: 1px;
-
-    color: #2177c892; /* text-blue-400 */
-  /* Softer glow for a glassy hint */
+  color: #2177c892;
   text-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.15),   /* subtle depth */
-    0 0 4px rgba(9, 45, 84, 0.338);  /* faint blue glow */
+    0 2px 4px rgba(0, 0, 0, 0.15),
+    0 0 4px rgba(9, 45, 84, 0.338);
 }
-
 
 .centered-content {
   display: flex;
@@ -316,94 +208,89 @@ h1 {
   height: 500px;
   padding: 20px;
   border-radius: 16px;
-   color: #065eb1;  
-}
-.centered-paragraph {
-  max-width: 60ch;        /* keeps line length readable */
-  margin: 4rem auto;      /* centers the block horizontally */
-  text-align: center;     /* centers the text inside */
-  line-height: 1.6;
-  font-size: 1.05rem;
-   color: #065eb1;
+  color: #065eb1;
 }
 
-  .center-text{
-    display: flex;
-    flex-direction: column; /* stack icon and text vertically */
-    align-items: center; /* center horizontally */
-   /* justify-content: center;  center vertically */
-    text-align: center; /* center text */
-    border-radius: 5%;
+.center-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 5%;
+}
 
-  }
-  .icon{
-    font-size: 40px;
-  }
+.circle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  border-radius: 50%;
+}
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
 
-  .circle{
-    display: flex;
+form {
+  width: 80%;
+  padding: 25px 25px 30px;
+  margin: 25px;
+}
 
-    align-items: center; /* center horizontally */
-   /* justify-content: center;  center vertically */
-    text-align: center; /* center text */
-    height: 500px; /* or set a fixed height */
-    border-radius: 50%;
-  }
-  
-  .contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    
-  }
-  form{
-    width: 80%;
-    padding: 25px 25px 30px;
-    margin: 25px;
-  }
+form h2 {
+  font-size: 30px;
+  text-align: center;
+}
 
-  form h2{
-    font-size: 30px;
-    text-align: center;
-  }
+form .input-box {
+  margin-top: 20px;
+}
 
-  form .input-box{
-    margin-top: 20px;
-  }
+.input-box .field {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #ddd;
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+  margin-top: 8px;
+}
 
-  .input-box .field{
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #ddd;
-    outline: none;
-    border-radius: 6px;
-    font-size: 16px;
-    color: #333;
-    margin-top: 8px;
-  }
-  .input-box .field.mess{
-    height: 200px;
-    resize: none;
-  }
+.input-box .field.mess {
+  height: 200px;
+  resize: none;
+}
 
-  form button{
-    width: 100%;
-    height: 55px;
-    border: none;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    margin-top: 25px;
-    transition: 5s;
-  }
-  form button:hover{
-    background-color: teal;
-  }
+form button {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 25px;
+  transition: 5s;
+}
 
-  
+form button:hover {
+  background-color: teal;
+}
+
+.glow-card {
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  box-shadow:
+    0 0 12px rgba(0, 210, 255, 0.6),
+    0 0 18px rgba(0, 210, 255, 0.4);
+  flex: 1;
+  min-width: 350px;
+  max-width: 550px;
+}

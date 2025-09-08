@@ -35,6 +35,8 @@ const Contact = () => {
   };
 
   return (
+    <>
+     <h1 className='center-text'>Contact</h1>
     <div className="container">
       <img
         src={call}
@@ -43,16 +45,13 @@ const Contact = () => {
         style={{paddingbottom: "50px"}}
       />
 
-      <div
-        className='box paper-box'
-        style={{ backgroundImage: `url(${paper1})`, height: "550px" }}
-      >
+      <div className='box glow-card'>
         <section className="contact">
           <form onSubmit={onSubmit}>
-            <h1>Ready to Chat? Contact Me :)</h1>
+            <h1>Lets talk!</h1>
 
             <div className='input-box'>
-              <label>Full Name</label>
+              <label style={{  color: "#1f4eb1"}}>Full Name</label>
               <input
                 type='text'
                 className='field'
@@ -63,7 +62,7 @@ const Contact = () => {
             </div>
 
             <div className='input-box'>
-              <label>Email Address</label>
+              <label style={{  color: "#1f4eb1"}}>Email Address</label>
               <input
                 type='email'
                 className='field'
@@ -74,7 +73,7 @@ const Contact = () => {
             </div>
 
             <div className='input-box'>
-              <label>Your Message</label>
+              <label style={{  color: "#1f4eb1"}}>Your Message</label>
               <textarea
                 name='message'
                 className='field message'
@@ -83,11 +82,12 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button type="submit" className="switcher">Send Message</button>
+            <button type="submit" className="switcher" style={{color: "black"}}>Send Message</button>
           </form>
         </section>
       </div>
     </div>
+    </>
   );
 };
 

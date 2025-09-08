@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar">
       <Link to="/" className="logo">
         <BiLogoReact className="logo-icon" />
-        <span className="logo-text">Moloko Magwai</span>
+        <span className="logo-text">Moloko</span>
       </Link>
 
       <div className="nav-links">
@@ -16,6 +16,7 @@ const Navbar = () => {
         <Link to="/about" className="nav-link">About</Link>
         <Link to="/services" className="nav-link">Services</Link>
         <Link to="/contact" className="nav-link">Contact</Link>
+         <Link to="/website" className="nav-link">website</Link>
       </div>
     </nav>
   )
