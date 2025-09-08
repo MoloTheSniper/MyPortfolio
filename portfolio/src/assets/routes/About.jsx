@@ -17,13 +17,12 @@ export const About = () => {
         </div>
         <div className='box glow-card' style={{height: "450px"}}>  
           <div className='centered-content' style={{paddingLeft:"80px", paddingRight:"80px"}}>    
-            <br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/>
             <h3 className='centered-text'>Whats up, the name is Moloko and I am the right guy for your digital needs. I am a software developer by profession, and i have over 5 years of working with clients and turning their software needs into reality.
               Be it websites, mobile apps, Logo's etc, i have you covered. All you need to do is tell me what you want and I'll make it happen! </h3>
           </div> 
         </div>   
       </div>
-      <br/><br/><br/><br/><br/>
     </div>
   )
 }

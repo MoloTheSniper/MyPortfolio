@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <>
-     <h1 className='center-text'>Contact</h1>
+    <h1 className='center-text'>Contact</h1>
     <div className="container">
       <img
         src={call}
