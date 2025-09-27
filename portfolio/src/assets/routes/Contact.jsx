@@ -81,8 +81,8 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-
-            <button type="submit" className="switcher" style={{color: "black"}}>Send Message</button>
+            <br/>
+            <button type="submit" className="switcher" >Send Message</button>
           </form>
         </section>
       </div>

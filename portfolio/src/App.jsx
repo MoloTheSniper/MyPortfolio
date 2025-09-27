@@ -1,30 +1,28 @@
 import './App.css'
-import {  Routes, Route } from "react-router";
-import Navbar from './components/Navbar';
-import Home from './assets/routes/Home';
-import { About } from './assets/routes/About';
-import Contact from './assets/routes/Contact';
-import React,{useEffect} from 'react';
-import Services from './assets/routes/Services';
-import Website from './assets/routes/Website';
+import Navbar from './components/Navbar'
+import Home from './assets/routes/Home'
+import Website from './assets/routes/Website'
+import { Routes, Route } from 'react-router'
+import React, { useRef } from 'react'
 
-function App() 
-{
+function App() {
+  const sectionRefs = {
+    home: useRef(null),
+    about: useRef(null),
+    services: useRef(null),
+    contact: useRef(null),
+  }
+
   return (
     <>
-       
-     <div style ={{"padding-top":"10px"}}>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element ={<Home/>}/>
-        <Route path ='/about' element ={<About/>}/>
-        <Route path='/contact' element= {<Contact/>}/>
-        <Route path='/services' element= {<Services/>}/>
-        <Route path='/website' element= {<Website/>}/>
-      </Routes>
-     </div>
-
+      <div style={{ paddingTop: '10px' }}>
+        <Navbar sectionRefs={sectionRefs} />
+        <Routes>
+          <Route path="/" element={<Home sectionRefs={sectionRefs} />} />
+        </Routes>
+      </div>
     </>
   )
 }
+
 export default App

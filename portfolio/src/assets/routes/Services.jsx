@@ -11,7 +11,7 @@ import paper1 from '../../assets/images/paper2.png'; // ⬅️ import here
 const Services = () => {
   return (
     <>
-      <h1 className='center-text'>Services</h1>
+      <h1 className='center-text'><h1 className= "super-heading">Services</h1></h1>
       <div className='container'>
 
         <div className='glow-card'>
@@ -22,7 +22,7 @@ const Services = () => {
             <h1>Web Development</h1>
             <br/>
             <p>Modern and Responsive website tailored for you.</p><br/>
-            <button className="switcher">Tell Me More</button>
+            <button className="switcher">React Js</button>
           </div>
         </div>
 
@@ -34,7 +34,7 @@ const Services = () => {
             <h1>Mobile App Development</h1>
             <br/>
             <p>Mobile Apps that work on IOS and Android.</p><br/>
-            <button className="switcher">Tell Me More</button> 
+            <button className="switcher">React Native</button> 
           </div>
         </div>
 
@@ -46,7 +46,7 @@ const Services = () => {
             <h1>3D Modeling & Rigging</h1>
             <br/>
             <p>High and Low poly models with high res textures.</p><br/>
-             <button className="switcher">Tell Me More</button> 
+             <button className="switcher">Blender 3D</button> 
           </div>
         </div>
 
